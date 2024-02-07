@@ -1,0 +1,14 @@
+return render_template('register.html')
+if __name__ == '__main__':
+app.run(host='0.0.0.0')
+ Create an templates folder and add the following two files:
+register.html and success.html.
+register.html
+<form method="post">
+<input type="text" name="name" placeholder="Name">
+<input type="email" name="email" placeholder="Email">
+<input type="password" name="password" placeholder="Password">
+<input type="submit" value="Submit">
+</form>
+success.html
+<h2>Registration Successful</h2>
